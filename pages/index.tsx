@@ -111,10 +111,10 @@ const Home: NextPage = () => {
             </p>
           </div>
           <div className="flex gap-5 justify-center my-5">
-            <a><FaFacebook/></a>
-            <a><FaSquareXTwitter/></a>
-            <a><FaInstagram/></a>
-            <a><FaLinkedin/></a>
+            <a href="https://www.facebook.com/velocitechelectronics/"><FaFacebook/></a>
+            <a href="https://twitter.com/velocitech_ele"><FaSquareXTwitter/></a>
+            <a href="https://www.instagram.com/velocitech.in/"><FaInstagram/></a>
+            <a href="https://www.linkedin.com/company/velocitechelectronics/"><FaLinkedin/></a>
           </div>
         </div>
         <div>&copy; Velocitech Eelectronics Private Limited 2023</div>
