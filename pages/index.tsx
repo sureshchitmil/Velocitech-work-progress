@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import { FaFacebook, FaSquareXTwitter, FaInstagram, FaLinkedin } from "react-icons/fa6";
 import Head from "next/head";
 import hero from "../src/assets/work-in-progress.png";
 import logo from "../src/assets/logo.png";
@@ -108,6 +109,12 @@ const Home: NextPage = () => {
                 className="hover:underline"
               >+91 7066644344</a>
             </p>
+          </div>
+          <div className="flex gap-5 justify-center my-5">
+            <a><FaFacebook/></a>
+            <a><FaSquareXTwitter/></a>
+            <a><FaInstagram/></a>
+            <a><FaLinkedin/></a>
           </div>
         </div>
         <div>&copy; Velocitech Eelectronics Private Limited 2023</div>
