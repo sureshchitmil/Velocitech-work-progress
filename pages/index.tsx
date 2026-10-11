@@ -7,12 +7,16 @@ import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
-    <div className="relative h-screen md:h-auto md:min-h-screen overflow-hidden py-10 px-5">
+    <div className="relative min-h-screen overflow-x-hidden py-10 px-5">
       <Head>
         <title>Velocitech Electronics PCB manufacturer</title>
+        <meta
+          name="description"
+          content="Velocitech Electronics Private Limited, PCB manufacturer. Contact us at contact@velocitech.in or +91 7066644344."
+        />
       </Head>
 
-      <main className="flex flex-col items-center justify-between h-full text-center">
+      <main className="flex flex-col items-center justify-between min-h-[calc(100vh-5rem)] text-center">
         <div>
           <svg
             className="absolute -z-10 opacity-80 right-full transform translate-y-2/4 translate-x-1/4 lg:translate-x-1/2"
@@ -96,7 +100,7 @@ const Home: NextPage = () => {
               but there is nothing holding back to contact with us!
             </p>
           </div>
-          <div className="flex gap-5 justify-center my-5">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-5 justify-center my-5">
             <p className="text-slate-700">
               Email:{" "}
               <a href="mailto:contact@velocitech.in"
@@ -105,19 +109,19 @@ const Home: NextPage = () => {
             </p>
             <p className="text-slate-700">
               Mobile:{" "}
-              <a href="mailto:+917066644344"
+              <a href="tel:+917066644344"
                 className="hover:underline"
               >+91 7066644344</a>
             </p>
           </div>
           <div className="flex gap-5 justify-center my-5">
-            <a href="https://www.facebook.com/velocitechelectronics/"><FaFacebook/></a>
-            <a href="https://twitter.com/velocitech_ele"><FaSquareXTwitter/></a>
-            <a href="https://www.instagram.com/velocitech.in/"><FaInstagram/></a>
-            <a href="https://www.linkedin.com/company/velocitechelectronics/"><FaLinkedin/></a>
+            <a href="https://www.facebook.com/velocitechelectronics/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FaFacebook/></a>
+            <a href="https://twitter.com/velocitech_ele" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><FaSquareXTwitter/></a>
+            <a href="https://www.instagram.com/velocitech.in/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram/></a>
+            <a href="https://www.linkedin.com/company/velocitechelectronics/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedin/></a>
           </div>
         </div>
-        <div>&copy; Velocitech Eelectronics Private Limited 2023</div>
+        <div>&copy; Velocitech Electronics Private Limited {new Date().getFullYear()}</div>
       </main>
     </div>
   );
